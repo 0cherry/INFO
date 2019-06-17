@@ -1,0 +1,37 @@
+How to link local directory and repository
+
+1. Registratin github id (Only once at first)
+   git config --global user.name 'name'
+   git config --global user.email 'email@address'
+   ssh-keygen -t rsa -b 4096 -C 'email@address'
+   github - setting - SSH keys - Add SSH key
+2. Initialize local directory
+   git init
+3. git remote add origin 'repository'
+4. git pull origin master
+   # refusing to merge unrelated histories
+   git pull origin 'branch name' --allow-unrelated-histories
+5. git add .
+   # canceling add command
+   git reset HEAD
+   git reset HEAD 'file name'
+6. git commit -m 'commit message'
+   # canceling commit command
+   git reset --soft HEAD^
+   git reset --mixed HEAD^
+   git reset HEAD^
+   git reset HEAD~2
+   git reset --hard HEAD^
+   ...
+   # modifying commit message
+   git commit --amend
+7. git push -u origin master
+   # listing commit list
+   git reflog or git log -git
+   # canceling push command
+   git reset HEAD^
+   git reset HEAD@{number} or git reset 'commit id'
+   # enforcing push command
+   git push origin 'branch name' -f
+   git push origin +'branch name'
+   
