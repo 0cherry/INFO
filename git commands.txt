@@ -1,6 +1,6 @@
 How to link local directory and repository
 
-1. Registratin github id (Only once at first)
+1. Registration github id (Only once at first)
    git config --global user.name 'name'
    git config --global user.email 'email@address'
    ssh-keygen -t rsa -b 4096 -C 'email@address'
