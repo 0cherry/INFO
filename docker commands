@@ -1,0 +1,37 @@
+# list docker images
+docker images
+
+# check container list
+docker ps -a
+
+# run container with options
+docker run 
+# -i : open STDIN and maintain it
+# -t : assign pesudo-tty to container
+# -name 'container name' : set container name
+# -d : run container as demon
+# -p 'port number' : open container port
+# -P : open port exposed at DockerFile
+# -v : 
+# -link : link two containers' network
+
+# list container
+docker ps -a
+
+# start container
+docker start 'container name'
+
+# restart container
+docker restart 'container name'
+
+# stop container
+docker stop 'container name'
+
+# remove container
+docker rm 'container name'
+
+# remove image
+docker rmi 'image name'
+
+# remove all containers
+docker rm 'docker ps -aq'
