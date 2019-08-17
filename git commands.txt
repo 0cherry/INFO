@@ -1,4 +1,4 @@
-How to link local directory and repository
+How to link local directory and github repository
 
 1. Registration github id (Only once at first)
    git config --global user.name 'name'
