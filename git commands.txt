@@ -12,6 +12,7 @@ How to link local directory and github repository
 3. git remote add origin 'repository'
    # print current github url
    git remove -v
+   git remote set-url origin 'repository'
 4. git pull origin master
    # refusing to merge unrelated histories
    git pull origin 'branch name' --allow-unrelated-histories
