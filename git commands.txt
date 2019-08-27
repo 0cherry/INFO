@@ -43,3 +43,11 @@ How to link local directory and github repository
    # enforcing push command
    git push origin 'branch name' -f
    git push origin +'branch name'
+   
+
+# git clone part of repository
+#. git config core.sparseCheckout true
+   git remote add -f origin 'repository'
+   echo 'part of repository/*'>.git/info/sparse-checkout
+   # echo 'git commands.txt'>.git/info/sparse-checkout
+   git pull origin master
