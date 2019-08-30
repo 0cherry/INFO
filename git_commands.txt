@@ -61,7 +61,8 @@ Commands related to branch/merge
    git checkout 'branch name'
 
 2. Merge
-   
+   # merge branch with current branch
+   git merge 'branch name'
 
 # git clone part of repository
 #. git init
