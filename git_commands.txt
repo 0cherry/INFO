@@ -17,14 +17,17 @@ How to link local directory and github repository
    git remote remove origin
    # rename remote repository
    git remote rename origin 'renamed' 
-4. git pull origin master
+4. Update local directory
+   git pull origin master
    # refusing to merge unrelated histories
    git pull origin 'branch name' --allow-unrelated-histories
-5. git add .
+5. Add files
+   git add .
    # canceling add command
    git reset HEAD
    git reset HEAD 'file name'
-6. git commit -m 'commit message'
+6. Commit message
+   git commit -m 'commit message'
    # canceling commit command
    git reset --soft HEAD^
    git reset --mixed HEAD^
@@ -34,7 +37,8 @@ How to link local directory and github repository
    ...
    # modifying commit message
    git commit --amend
-7. git push -u origin master
+7. Push to remote repository
+   git push -u origin master
    # listing commit list
    git reflog or git log -git
    # canceling push command
@@ -45,6 +49,20 @@ How to link local directory and github repository
    git push origin +'branch name'
    
 
+
+Commands related to branch/merge
+
+1. Branch
+   # create branch
+   git branch 'branch name'
+   # check active branches
+   git branch
+   # checkout branch
+   git checkout 'branch name'
+
+2. Merge
+   
+
 # git clone part of repository
 #. git init
    git config core.sparseCheckout true
@@ -52,3 +70,4 @@ How to link local directory and github repository
    echo 'part of repository/*'>.git/info/sparse-checkout
    # echo 'git commands.txt'>.git/info/sparse-checkout
    git pull origin master
+
