@@ -1,4 +1,4 @@
 # First
 1st repository
 
-How to link local directory and repository
+How to install, set or troubleshoot about various things
