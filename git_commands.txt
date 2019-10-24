@@ -1,8 +1,13 @@
 How to link local directory and github repository
 
 1. Registration github id (Only once at first)
+   # set config with global option
    git config --global user.name 'name'
    git config --global user.email 'email@address'
+   # unset
+   git config --unset --global user.name
+   # reset credential.helper (when the authentication fail is continous)
+   git config --system --unset credential.helper (with admin privilege)
    ssh-keygen -t rsa -b 4096 -C 'email@address'
    github - setting - SSH keys - Add SSH key
 2. Initialize local directory
