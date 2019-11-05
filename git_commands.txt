@@ -26,6 +26,8 @@ How to link local directory and github repository
    git pull origin master
    # refusing to merge unrelated histories
    git pull origin 'branch name' --allow-unrelated-histories
+   git rebase
+   git stash
 5. Add files
    git add .
    # canceling add command
@@ -76,4 +78,5 @@ Commands related to branch/merge
    echo 'part of repository/*'>.git/info/sparse-checkout
    # echo 'git commands.txt'>.git/info/sparse-checkout
    git pull origin master
+
 
