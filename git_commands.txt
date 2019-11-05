@@ -30,6 +30,7 @@ How to link local directory and github repository
    git stash
 5. Add files
    git add .
+   git add 'file name'
    # canceling add command
    git reset HEAD
    git reset HEAD 'file name'
