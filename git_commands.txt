@@ -27,6 +27,7 @@ How to link local directory and github repository
    # refusing to merge unrelated histories
    git pull origin 'branch name' --allow-unrelated-histories
    git rebase
+   # temporary saving current works
    git stash
 5. Add files
    git add .
