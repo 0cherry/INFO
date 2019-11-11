@@ -72,6 +72,10 @@ Commands related to branch/merge
 2. Merge
    # merge branch with current branch
    git merge 'branch name'
+   
+   Rebase
+   # merge branch with master
+   git rebase master
 
 # git clone part of repository
 #. git init
