@@ -29,6 +29,16 @@ How to link local directory and github repository
    git rebase
    # temporary saving current works
    git stash
+   git stash save
+   # apply the saved stash
+   ## apply the most recent stash
+   git stash apply
+   ## apply the stash named 'stash name'
+   git stash apply 'stash name'
+   ## apply the stash with stage
+   git stash apply --index
+   # remove stash
+   git stash drop
 5. Add files
    git add .
    git add 'file name'
