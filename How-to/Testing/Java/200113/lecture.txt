@@ -1,7 +1,7 @@
 Eclipse (IDE)
 JUnit
-Mockito (stub generation)
-Gradle / Maven / Ant
+Mockito (Stub Generation)
+Gradle / Maven / Ant (Build Tool)
 
 http://softwaretestingstandard.org/
 ISO/IEC/IEEE/29119 : 국제표준
