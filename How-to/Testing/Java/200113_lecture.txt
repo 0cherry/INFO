@@ -1,0 +1,14 @@
+Eclipse
+JUnit
+Mockito
+Gradle / Maven / Ant
+
+http://softwaretestingstandard.org/
+ISO/IEC/IEEE/29119 : 국제표준
+
+Exercise Target)
+Specification-Based Testing 
+Structure-Based Testing 
+Experience-Based Testing 
+Keyword-Driven Testing
+
