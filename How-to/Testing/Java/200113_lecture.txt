@@ -6,12 +6,6 @@ Gradle / Maven / Ant
 http://softwaretestingstandard.org/
 ISO/IEC/IEEE/29119 : 국제표준
 
-Exercise Target)
-Specification-Based Testing 
-Structure-Based Testing 
-Experience-Based Testing 
-Keyword-Driven Testing
-
 
 Project Quality Management
 * Quality Planning
@@ -37,3 +31,15 @@ Term
 ** Reachability condition : The fault must be operated
 ** Infection condition : After the fault is perated, Error state must be occured
 ** Propagation condition : 
+
+
+Exercise Target)
+* Specification-Based Testing (Black-box)
+** 누락된 기능 탐지할 때
+* Structure-Based Testing (White-box)
+** 의도되지 않은 기능 탐지할 때
+* Experience-Based Testing 
+** 오류 추정 기법, 오류가 발생할 것 같은 케이스 작성
+
+Keyword-Driven Testing
+
