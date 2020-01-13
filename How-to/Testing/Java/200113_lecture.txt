@@ -12,3 +12,13 @@ Structure-Based Testing
 Experience-Based Testing 
 Keyword-Driven Testing
 
+
+Project Quality Management
+* Quality Planning
+* Quality Assurance (QA)
+** Audit (감사)
+** Process Analysis
+** Process Evaluation
+* Quality Control (QC)
+** inspection, test
+** Product Analysis
