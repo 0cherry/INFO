@@ -22,3 +22,18 @@ Project Quality Management
 * Quality Control (QC)
 ** inspection, test
 ** Product Analysis
+
+
+Term
+* Mistake (Error) : 실수
+* Fault : occured by Mistake (사람 때문에 발생)
+** omission : not implemented (명세에 있는데 구현 안된 것)
+** commision : not required (명세에 없는데 구현된 것)
+** not meeted (logic은 있는데 잘못 구현된 것)
+* Faliure : occured by Fault. 결과가 기대한 것 과 다름 (오작동). 외부에서 관측이 가능해야 함.
+** Fault가 있다고 항상 발생하는 건 아님.
+
+* RIP model
+** Reachability condition : The fault must be operated
+** Infection condition : After the fault is perated, Error state must be occured
+** Propagation condition : 
