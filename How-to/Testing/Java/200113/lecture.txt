@@ -1,5 +1,5 @@
 Eclipse (IDE)
-JUnit
+JUnit (Test Framework)
 Mockito (Stub Generation)
 Gradle / Maven / Ant (Build Tool)
 
