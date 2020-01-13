@@ -1,6 +1,6 @@
-Eclipse
+Eclipse (IDE)
 JUnit
-Mockito
+Mockito (stub generation)
 Gradle / Maven / Ant
 
 http://softwaretestingstandard.org/
@@ -40,6 +40,25 @@ Exercise Target)
 ** 의도되지 않은 기능 탐지할 때
 * Experience-Based Testing 
 ** 오류 추정 기법, 오류가 발생할 것 같은 케이스 작성
-
 Keyword-Driven Testing
+
+
+Test Level
+* 단위 테스트 (Unit Test)
+** Driver and Stub must be generated automately. (ex. Mockito)
+* 통합 테스트 (Integration Test)
+** The connected components are tested.
+* 시스템 테스트 (System Test)
+** Done after integration test is completed.
+* 인수 테스트 (Acceptance Test)
+** User do this test.
+** Alpha test (in developer environment)
+** Beta test (in user environment)
+
+* Testing Pyramid
+** UI Test : end-to-end test (ex. keyword-driven test)
+*** end-to-end test : test in user aspect
+** Integration Test
+** Unit Test
+
 
