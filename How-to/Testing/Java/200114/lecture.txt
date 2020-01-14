@@ -4,4 +4,5 @@ Create testcase using gradle project in Java
 ** 3A (Arrange, Act, Assert)
 ** Tasks (compileJava processResources classes compileTestJava processTestResources testClasses test ...)
 ** Data-Driven Test
-*** remove duplicate logic
+*** remove duplicate logic (@BeforeEach, @AfterEach and so on)
+** @Nested : description between methods, representation hierarchy
