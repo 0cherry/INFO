@@ -1,1 +1,5 @@
-
+Create testcase using gradle project in Java
+* JUnit 5 (JUnit Jupiter test)
+* Test Method described Test annotation (@Test) in Test Class (JUnit Test Case)
+** 3A (Arrange, Act, Assert)
+** Tasks (compileJava processResources classes compileTestJava processTestResources testClasses test ...)
