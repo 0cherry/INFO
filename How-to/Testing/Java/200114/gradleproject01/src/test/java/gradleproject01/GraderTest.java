@@ -2,11 +2,27 @@ package gradleproject01;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 @DisplayName("학점 계산 프로그램 테스트")
 class GraderTest {
+	
+	Grader grader;
+	
+	@BeforeEach
+	void setUp() {
+		grader = new Grader();
+		System.out.println("Test setup");
+	}
+	
+	@AfterEach
+	void tearDown() {
+		grader = new Grader();
+		System.out.println("Test end");
+	}
 
 	@DisplayName("90점 이상이면 A 등급")
 	@Test
@@ -15,7 +31,7 @@ class GraderTest {
 		double mids = 90;
 		double finals = 92;
 		double homeworks = 90;
-		Grader grader = new Grader();
+//		Grader grader = new Grader();
 		
 		/* Act */
 		Grade actual = grader.computeGrade(mids, finals, homeworks);
@@ -31,7 +47,7 @@ class GraderTest {
 		double mids = 80;
 		double finals = 92;
 		double homeworks = 90;
-		Grader grader = new Grader();
+//		Grader grader = new Grader();
 		
 		/* Act */
 		Grade actual = grader.computeGrade(mids, finals, homeworks);
@@ -47,7 +63,7 @@ class GraderTest {
 		double mids = 80;
 		double finals = 72;
 		double homeworks = 70;
-		Grader grader = new Grader();
+//		Grader grader = new Grader();
 		
 		/* Act */
 		Grade actual = grader.computeGrade(mids, finals, homeworks);
@@ -63,7 +79,7 @@ class GraderTest {
 		double mids = 60;
 		double finals = 62;
 		double homeworks = 70;
-		Grader grader = new Grader();
+//		Grader grader = new Grader();
 		
 		/* Act */
 		Grade actual = grader.computeGrade(mids, finals, homeworks);
@@ -79,7 +95,7 @@ class GraderTest {
 		double mids = 50;
 		double finals = 92;
 		double homeworks = 30;
-		Grader grader = new Grader();
+//		Grader grader = new Grader();
 		
 		/* Act */
 		Grade actual = grader.computeGrade(mids, finals, homeworks);
