@@ -2,6 +2,7 @@ package gradleproject01;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.experimental.categories.Category;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -9,6 +10,7 @@ import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
 import org.junit.jupiter.api.TestInstance.Lifecycle;
+import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
 
@@ -29,6 +31,40 @@ class GraderTest {
 	void tearDown() {
 //		grader = new Grader();
 //		System.out.println("Test end");
+	}
+	
+	@DisplayName("@CsvSource를 이용한 테스트")
+	@Nested
+	class CsvSourceExample {
+		@DisplayName("정상적인 점수 입력")
+		@ParameterizedTest(name="중간점수 {1} 기말점수 {2} 과제점수 {3} {0}등급")
+		@CsvSource({
+			"A,95,85,98",
+			"B,85,85,88",
+			"C,78,75,68",
+			"D,69,55,70",
+			"F,55,60,34"
+		})
+		void should_give_correct_grade_for_valid_scores(Grade g, double m, double f, double h) {
+			Grade actual = grader.computeGrade(m, f, h);
+			assertEquals(g, actual);
+		}
+		
+		@DisplayName("비정상적인 점수 입력")
+		@ParameterizedTest(name="중간점수 {1} 기말점수 {2} 과제점수 {3} Exception 발생")
+		@CsvSource({
+			"InvalidRangeException,-10,10,10",
+			"InvalidRangeException,10,-10,10",
+			"InvalidRangeException,10,10,-10",
+			"InvalidRangeException,110,10,10",
+			"InvalidRangeException,10,110,10",
+			"InvalidRangeException,10,10,110"
+		})
+		void should_give_exception(Exception ie, double m, double f, double h) {
+			assertThrows(ie.getClass(), () -> {
+				grader.computeGrade(m, f, h);
+			});
+		}
 	}
 
 	@DisplayName("정상적인 점수 입력")
