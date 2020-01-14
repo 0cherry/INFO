@@ -3,3 +3,5 @@ Create testcase using gradle project in Java
 * Test Method described Test annotation (@Test) in Test Class (JUnit Test Case)
 ** 3A (Arrange, Act, Assert)
 ** Tasks (compileJava processResources classes compileTestJava processTestResources testClasses test ...)
+** Data-Driven Test
+*** remove duplicate logic
