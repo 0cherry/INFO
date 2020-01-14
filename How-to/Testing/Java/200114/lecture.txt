@@ -7,3 +7,5 @@ Create testcase using gradle project in Java
 *** remove duplicate logic (@BeforeEach, @AfterEach and so on)
 ** @Nested : description between methods, representation hierarchy
 ** Refer gradleproject01
+* Mockito
+** Object Clone Generation Framework
