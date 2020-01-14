@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gradleproject01.GraderTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2020-01-14T08:20:45" hostname="DESKTOP-ANNOPJT" time="0.131">
+  <properties/>
+  <testcase name="should_give_exception(double, double, double)[1]" classname="gradleproject01.GraderTest" time="0.057"/>
+  <testcase name="should_give_exception(double, double, double)[2]" classname="gradleproject01.GraderTest" time="0.002"/>
+  <testcase name="should_give_exception(double, double, double)[3]" classname="gradleproject01.GraderTest" time="0.002"/>
+  <testcase name="should_give_exception(double, double, double)[4]" classname="gradleproject01.GraderTest" time="0.001"/>
+  <testcase name="should_give_exception(double, double, double)[5]" classname="gradleproject01.GraderTest" time="0.001"/>
+  <testcase name="should_give_exception(double, double, double)[6]" classname="gradleproject01.GraderTest" time="0.002"/>
+  <testcase name="should_giv_correct_grade_for_valid_scores(Grade, double, double, double)[1]" classname="gradleproject01.GraderTest" time="0.006"/>
+  <testcase name="should_giv_correct_grade_for_valid_scores(Grade, double, double, double)[2]" classname="gradleproject01.GraderTest" time="0.003"/>
+  <testcase name="should_giv_correct_grade_for_valid_scores(Grade, double, double, double)[3]" classname="gradleproject01.GraderTest" time="0.007"/>
+  <testcase name="should_giv_correct_grade_for_valid_scores(Grade, double, double, double)[4]" classname="gradleproject01.GraderTest" time="0.001"/>
+  <testcase name="should_giv_correct_grade_for_valid_scores(Grade, double, double, double)[5]" classname="gradleproject01.GraderTest" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

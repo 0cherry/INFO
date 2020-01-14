@@ -21,6 +21,7 @@ plugins {
 }
 
 repositories {
+	jcenter()
 	mavenCentral()
 }
 
@@ -28,8 +29,17 @@ dependencies {
    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.5.2'
    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.5.2'
    testImplementation 'org.junit.jupiter:junit-jupiter-params:5.5.2'
-   testImplementation 'org.junit.jupiter:junit-jupiter-params:5.5.2'
+ //  testImplementation 'org.junit.jupiter:junit-jupiter-params:5.5.2'
  //  testRuntimeOnly 'org.junit.vintage:junit-vintage-engine:5.4.0'
+ 
+   def mockitoVersion = '3.2.4'
+   testImplementation "org.mockito:mockito-core:${mockitoVersion}"
+   // testCompile "org.mockito:mockito-core:${mockitoVersion}"
+   testImplementation "org.mockito:mockito-junit-jupiter:${mockitoVersion}"
+   // testCompile "org.mockito:mockito-junit-jupiter:${mockitoVersion}"
+   // implementation 'com.googlecode.json-simple:json-simple:1.1.1'
+   implementation 'com.googlecode.json-simple:json-simple:1.1.1'
+   // implementation 'https://repo.maven.apache.org/maven2/com/googlecode/json-simple/json-simple/1.1.1.1/json-simple-1.1.1.1.pom'
 }
 
 //test {
