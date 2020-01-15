@@ -1,3 +1,5 @@
+Black-box Testing
+
 일대일 동등 분할 (One-to-One Equivalence Partitioning)
 * 분할 영역만큼 테스트 케이스 필요
 ** ex. 분할1:A<1, 분할2:A>999, 분할3:400으로 나누어지는 수
