@@ -1,0 +1,2 @@
+학점 계산 - 경계값 분석 방법 2-value 방식
+피자 계산 - pairwise testing
