@@ -1,11 +1,11 @@
 일대일 동등 분할 (One-to-One Equivalence Partitioning)
 * 분할 영역만큼 테스트 케이스 필요
-** ex. 분할1:입력<1, 분할2:입력>999, 분할3:400으로 나누어지는 수
+** ex. 분할1:A<1, 분할2:A>999, 분할3:400으로 나누어지는 수
 **     이와 같은 분할영역이 있을 경우 각 분할영역을 만족하는 테스트 케이스 필요 (여기서는 3개)
 
 최소화 동등 분할 방식 
 * 테스트 케이스 하나가 분할 영역 여러 개를 커버할 수 있음
-** ex. 분할1:입력<1, 분할2:입력>999, 분할3:400으로 나누어지는 수
+** ex. 분할1:A<1, 분할2:A>999, 분할3:400으로 나누어지는 수
 **     입력:4000 이면 분할영역 2와 3을 함께 만족시킬 수 있으므로 나머지 분할영역1을 만족시키는 테스트 케이스를 생성하면 됨
 
 분류 트리 방법 (Classification Tree)
@@ -33,6 +33,29 @@
 ** 클래스 수가 많은 두 클래스 조합만큼 테스트 케이스가 생성된다. 
 *** ex. Class1 2개, Class2 3개, Class3 4개인 경우 pairwise testcase 수는 12개.
 ** "IPO algorithm" for pairwise
+** "PICT" for pairwise testing tool by Microsoft
 * All Combinations Testing
 ** 가능한 모든 조합을 테스트
 * Base Choice Testing
+** 기반이 되는 조합을 미리 선정
+
+상태 전이 테스팅 (State Transition Testing)
+* stateA---event/action--->stateB (상태 전이 구성요소)
+* 상태 테스팅 (state testing)
+** 상태 전이도의 모든 상태를 최소한 한 번 방문하는 테스트 설계
+* 단일 전이 테스팅 (single transitions testing, 0-switch testing)
+** 유효한 전이들을 최소한 한 번 방문하는 테스트 설계
+*** ex. A->B edge2개 B->C edge3개인 경우, 테스트 케이스 3개 필요
+* All transitions testing
+** 유효하지 않은 전이들도 최소한 한 번 방문하는 테스트 설계
+* 다중 전이 테스팅 (multiple transitions testing, N-switch testing)
+** 상태 전이도에 있는 N+1 개의 전이 시퀀스를 최소한 한 번 방문하는 테스트 설계
+** Difference with 0-switch testing and 1-switch testing
+*** ex. A->B edge2개 B->C edge3개인 경우, 1-switch 테스트 케이스 6개 필요
+
+결정표 테스팅 (Decision Table Testing)
+* 입력 조건의 다양한 논리적 관계에 따른 행위가 결정될 때 이용
+
+테스트 용이성 (Testability)
+* 제어 용이성 (Controlability)
+* 관찰 용이성 (Observability)
