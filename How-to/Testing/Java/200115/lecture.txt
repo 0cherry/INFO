@@ -14,3 +14,25 @@
 * 동등 분할 테스팅이나 경계 값 분석 방법을 이용하여 분류 노드를 여러 클래스 노드로 분할을 반복
 * 완성된 트리의 leaf 노드를 조합하여 테스트 케이스 구성
 
+경계 값 분석 (Boundary Value Analysis)
+* 오류는 도메인 에러와 계산 에러로 구분할 수 있다.
+** 도메인 에러:입력이 잘못된 경로를 실행
+*** 폐쇄 오류, 이동 경계 오류, 기울어진 경계 오류, 잉여 경계 오류, 누락 경계 오류
+* 도메인 에러를 탐지하는데 효과적
+* one-to-ont equivalence partitioning 과 비슷한데 경계값을 테스트 입력으로 사용
+* 2-value BVA : 경계값과 경계 외부에 있는 경계와 가장 가까운 값 선정 (경계 내부와 경계값은 비슷하다)
+* 3-value BVA : 경계깞과 경계 내부와 경계 외부에서 가장 가까운 값 선정
+
+구문 테스팅 (Syntax Testing)
+* 입력이 구문에 맞게 작성되었는지 테스트하는 방법
+
+조합 테스팅 (Combination Testing)
+* Each Choice Testing (like-minimize)
+** 테스트 케이스의 수는 클래스가 가장 많은 것과 같다.
+* Pairwise Testing
+** 클래스 수가 많은 두 클래스 조합만큼 테스트 케이스가 생성된다. 
+*** ex. Class1 2개, Class2 3개, Class3 4개인 경우 pairwise testcase 수는 12개.
+** "IPO algorithm" for pairwise
+* All Combinations Testing
+** 가능한 모든 조합을 테스트
+* Base Choice Testing
