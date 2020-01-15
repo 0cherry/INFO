@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+encoding//src/test/resources/combination_testing/all_combinations_testcase.csv=UTF-8
+encoding//src/test/resources/combination_testing/each_choice_testcase.csv=UTF-8
+encoding//src/test/resources/combination_testing/pairwise_testcase.csv=UTF-8
