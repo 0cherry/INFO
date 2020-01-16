@@ -1,0 +1,5 @@
+-1,60,60,InvalidRangeException
+0,60,60,F
+
+100,60,60,C
+101,60,60,InvalidRangeException

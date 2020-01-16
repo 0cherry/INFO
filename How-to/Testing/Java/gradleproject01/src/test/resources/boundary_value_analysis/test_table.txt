@@ -1,4 +1,4 @@
-# one_to_one_equivalence_partitioning packageÀÇ ¼Ò½ºÄÚµå¸¦ ÀÌ¿ë
+# one_to_one_equivalence_partitioning packageì˜ ì†ŒìŠ¤ì½”ë“œë¥¼ ì´ìš©..
 A==0
 A==100
 B==0
