@@ -13,3 +13,4 @@ in ride
 * new project
 * new testcase
 * Avaliable extern keyword using SeleniumLibrary in ride
+* Caution!!: chromedriver.exe must be located "python/Scripts/" 
