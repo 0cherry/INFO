@@ -32,6 +32,10 @@ White-box Testing
 
 다중 조건 테스팅 (Multiple Condition Combination Testing)
 * 세부 조건들과 결과가 True/False 적어도 한 번 나오도록 테스트 설계
+* 조건의 수에 따라 테스트 케이스가 많아짐
 ** CDC : 조건/결정 커버리지 동시 만족
 ** Modified CDC : 변형된 CDC
-* 조건의 수에 따라 테스트 케이스가 많아짐
+** Unique cause MCDC
+*** 대상 조건 외에 모든 다른 조건 값이 고정
+** Masking MCDC
+*** Unique cause MCDC 의 조건을 완화 (반드시 고정시킬 필요 없음)
