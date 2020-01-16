@@ -1,7 +1,6 @@
 http://softwaretestingstandard.org/
 ISO/IEC/IEEE/29119 : 국제표준
 
-
 Project Quality Management
 * Quality Planning
 * Quality Assurance (QA)
@@ -11,7 +10,6 @@ Project Quality Management
 * Quality Control (QC)
 ** inspection, test
 ** Product Analysis
-
 
 Term
 * Mistake (Error) : 실수
@@ -27,16 +25,15 @@ Term
 ** Infection condition : After the fault is perated, Error state must be occured
 ** Propagation condition : 
 
-
-Exercise Target)
+The kinds of Testing
 * Specification-Based Testing (Black-box)
 ** 누락된 기능 탐지할 때
 * Structure-Based Testing (White-box)
 ** 의도되지 않은 기능 탐지할 때
 * Experience-Based Testing 
 ** 오류 추정 기법, 오류가 발생할 것 같은 케이스 작성
-Keyword-Driven Testing
-
+* Keyword-Driven Testing
+* etc.
 
 Test Level
 * 단위 테스트 (Unit Test)
@@ -55,5 +52,3 @@ Test Level
 *** end-to-end test : test in user aspect
 ** Integration Test
 ** Unit Test
-
-
