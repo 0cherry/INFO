@@ -1,0 +1,15 @@
+미리 정의된 키워드를 사용하여 테스트 케이스를 기술하는 방식
+키워드는 테스트 케이스의 특정 단계를 수행하기 위해 요구되는 행위들을 추상화
+모든 요구되는 테스트 케이스들을 전적으로 정의된 키워드를 사용하여 정의할 수 있도록 포괄적인 키워드 집합을 제공하는 것이 목적
+
+Exercise)
+Java + Python + Eclipse
+* pip install robotframework
+* pip install -U wxPython
+* pip install robotframework-ride
+** after install, do test command "ride.py"
+
+in ride
+* new project
+* new testcase
+* Avaliable extern keyword using SeleniumLibrary in ride
