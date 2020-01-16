@@ -10,10 +10,28 @@ White-box Testing
 ** Dead code 검출
 ** 활성화되지 않은 코드 검출 (Deactivated Code)
 
-
 제어 흐름 그래프 구성 요소 (refer Compiler)
 * 기본 블록 (Basic Block)
 * 제어 흐름 (Edges)
 
+문장 테스팅 (Statement(Block) Testing)
+* 모든 문장을 적어도 한 번 실행하도록 테스트 설계
 
-문장 테스팅 (Statement Testing)
+분기 테스팅 (Branch Testing)
+* 모든 분기를 적어도 한 번 실행하도록 테스트 설계
+
+결정 테스팅 (Decision Testing)
+* 분기 테스팅과 비슷한데 29119에서는 다르게 정의
+* 모든 condition 은 decision 이다. (역은 성립안함 "모든 decision 은 condition 이다")
+* 모든 복합 조건에 대해서 적어도 한 번 실행하도록 테스트 설계
+* 세부 조건은 보지 않고 결과가 True/False 적어도 한 번 나오도록 테스트 설계
+
+조건 테스팅 (Condition Testing)
+* 모든 단일 조건에 대해서 적어도 한 번 실행하도록 테스트 설계
+* 세부 조건들을 보면서 각각의 조건들이 True/False 적어도 한 번 나오도록 테스트 설계
+
+다중 조건 테스팅 (Multiple Condition Combination Testing)
+* 세부 조건들과 결과가 True/False 적어도 한 번 나오도록 테스트 설계
+** CDC : 조건/결정 커버리지 동시 만족
+** Modified CDC : 변형된 CDC
+* 조건의 수에 따라 테스트 케이스가 많아짐
