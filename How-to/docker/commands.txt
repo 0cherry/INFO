@@ -35,3 +35,9 @@ docker rmi 'image name'
 
 # remove all containers
 docker rm 'docker ps -aq'
+
+# copy file
+# from local to docker
+docker cp /local/path/to/copy container_name:/path/to/destination
+# from docker to local
+docker cp container_name:/path/to/copy local/path/to/destination
