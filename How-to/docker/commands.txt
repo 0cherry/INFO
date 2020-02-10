@@ -21,6 +21,9 @@ docker run
 # -v : 
 # -link : link two containers' network
 
+# command at running container
+docker exec [option ...]
+
 # list container
 docker ps -a
 
