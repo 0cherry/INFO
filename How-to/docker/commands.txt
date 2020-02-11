@@ -1,14 +1,9 @@
 # pull the docker image
 docker pull image_name
-
-# list docker images
-docker images
-
 # remove image
 docker rmi image_name
-
-# list containers
-docker ps -a
+# list docker images
+docker images
 
 # run container with options
 docker run 
@@ -21,28 +16,30 @@ docker run
 # -v : 
 # -link : link two containers' network
 
+# connect to container
+docker attach container_name
+
 # command at running container
 docker exec [option ...]
+ex. execute bash shell to the corresponding container as root privilege
+docker exec -ti -u root container_name bash
 
 # list container
 docker ps -a
 
 # start container
 docker start container_name
-
 # restart container
 docker restart container_name
-
 # stop container
 docker stop container_name
-
 # remove container
-docker rm container_name
 
+docker rm container_name
 # remove all containers
 docker rm 'docker ps -aq'
 
-# copy file
+# copy file (local <-> container)
 # from local to docker
 docker cp /local/path/to/copy container_name:/path/to/destination
 # from docker to local
