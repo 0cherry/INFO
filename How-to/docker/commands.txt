@@ -5,8 +5,8 @@ docker rmi image_name
 # list docker images
 docker images
 
-# run container with options
-docker run 
+# create and start a container
+docker run option...
 # -i : open STDIN and maintain it
 # -t : assign pesudo-tty to container
 # --name container_name : set container name
@@ -15,6 +15,7 @@ docker run
 # -P : open port exposed at DockerFile
 # -v : 
 # -link : link two containers' network
+ex. docker run -it image_name
 
 # connect to container
 docker attach container_name
