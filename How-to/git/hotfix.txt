@@ -1,0 +1,103 @@
+$ git status -uno
+On branch develop Your branch is up to date with 'origin/develop'.
+Changes not staged for commit:
+(use "git add <file>..." to update what will be committed)
+(use "git restore <file>..." to discard changes in working directory) 
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+$ git stash save
+Saved working directory and index state WIP on develop: Merge branch '...' into develop
+
+$ git pull -r --all
+...
+4 files changed, 125 insertions(+), 115 deletions(-)
+Current branch develop is up to date.
+
+$ git flow init
+Which branch should be used for bringing forth production releases?
+- develop
+Branch name for production releases: [] master
+Which branch should be used for integration of the "next release"?
+- develop
+Branch name for "next release" development: [develop] develop
+How to name your supporting branch prefixes?
+Feature branches? [feature/]
+Bugfix branches? [bugfix/]
+Release branches? [release/]
+Hotfix branches? [hotfix/]
+Support branches? [support/]
+Version tag prefix? []
+Hooks and filters directory? [D:/git_repo/gitlab_static/static/.git/hooks]
+
+$ git flow config
+Branch name for production releases: master
+Branch name for "next release" development: develop
+Feature branch prefix: feature/
+Bugfix branch prefix: bugfix/
+Release branch prefix: release/
+Hotfix branch prefix: hotfix/
+Support branch prefix: support/
+Version tag prefix:
+
+$ git flow hotfix start lambda_oom
+Switched to a new branch 'hotfix/lambda_oom'
+Summary of actions:
+- A new branch 'hotfix/lambda_oom' was created, based on 'master'
+- You are now on branch
+'hotfix/lambda_oom'
+Follow-up actions:
+- Start committing your hot fixes
+- Bump the version number now!
+- When done, run:
+git flow hotfix finish 'lambda_oom'
+
+$ git stash pop
+On branch hotfix/lambda_oom
+Changes not staged for commit:
+(use "git add <file>..." to update what will be committed)
+(use "git restore <file>..." to discard changes in working directory)
+...
+
+$ git commit *
+ticket-number modified_contents
+
+- description
+...
+
+$ git flow hotfix finish 'lambda_oom'
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+Merge made by the 'recursive' strategy.
+...
+4 files changed, 14 insertions(+), 3 deletions(-)
+Switched to branch 'develop'
+Your branch is up to date with 'origin/develop'.
+Merge made by the 'recursive' strategy.
+...
+4 files changed, 14 insertions(+), 3 deletions(-)
+Deleted branch hotfix/lambda_oom (was 0f2f769b7).
+Summary of actions:
+- Hotfix branch 'hotfix/lambda_oom' has been merged into 'master'
+- The hotfix was tagged 'lambda_oom'
+- Hotfix tag 'lambda_oom' has been back-merged into 'develop'
+- Hotfix branch 'hotfix/lambda_oom' has been locally deleted
+- You are now on branch 'develop'
+
+$ git pull -r
+First, rewinding head to replay your work on top of it...
+Applying: ...
+
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+$ git pull -r
+First, rewinding head to replay your work on top of it...
+Applying: STCS-245 add option for treat a lambda-expr as unknown-expr
+
+$ git push --all
+...
+   bd5205115..7fb8016c9  develop -> develop
+   2a892166d..bf2855f91  master -> master
