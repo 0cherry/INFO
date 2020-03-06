@@ -58,6 +58,8 @@ How to link local directory and github repository
    git commit --amend
 7. Push to remote repository
    git push -u origin master
+   # when you commit change after new push, run this command before push
+   git pull --rebase
    # listing commit list
    git reflog or git log -git
    # canceling push command
