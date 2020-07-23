@@ -97,4 +97,5 @@ Commands related to branch/merge
    # echo 'git commands.txt'>.git/info/sparse-checkout
    git pull origin master
 
-
+# git clone specific branch
+   git clone -b 'branch_name' 'address'
