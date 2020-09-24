@@ -27,3 +27,6 @@ checkout new branch - working in new branch - select commits - commit original b
 > git cherry-pick 'commit name' 'commit name' ...
 
 > git commit -m 'message'
+
+
+https://mylko72.gitbooks.io/git/content/branch/merge.html
