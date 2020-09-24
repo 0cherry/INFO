@@ -1,0 +1,22 @@
+If hotfix is required at specific branch
+create local branch - create remote branch - branch link - work in new branch - add,commit,push - merge - remove new branch
+
+# create local branch
+> git checkout -b 'new branch'
+ equals
+> git branch 'new branch' 'specific branch'
+> git checkout 'new branch'
+
+# create remote branch
+> git push origin 'new branch'
+
+# link local branch to remote branch
+> git branch --set-upstream-to origin/'new branch'
+
+...
+After working at a new branch, If pull request is required, create pull request from the repository
+
+# remove new branch after completing the merge of changes
+> git checkout 'merged branch'
+> git branch --delete 'new branch'
+> git push origin :'new branch'
