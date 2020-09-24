@@ -22,3 +22,5 @@ After working at a new branch, If pull request is required, create pull request 
 # force to delete branch
 > git branch -D 'new branch'
 > git push origin :'new branch'
+
+https://trustyoo86.github.io/git/2017/11/28/git-remote-branch-create.html

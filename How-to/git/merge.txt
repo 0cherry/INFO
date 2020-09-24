@@ -1,0 +1,29 @@
+1. direct merge with branches
+checkout new branch - working in new branch - merge
+> git checkout -b 'new branch'
+...commit your changes...
+> git checkout 'branch to merge'
+> git merge 'new branch'
+
+2. merge with commits
+checkout new branch - working in new branch - compress all commit at new branch - commit original branch
+> git checkout -b 'new branch' 'original branch'
+...commit your changes...
+> git checkout 'original branch'
+> git merge --squash 'new branch'
+> git commit -m 'message'
+
+3. use cherry-pick
+checkout new branch - working in new branch - select commits - commit original branch
+> git checkout -b 'new branch' 'original branch'
+...commit your changes...
+> git checkout 'original branch'
+
+# select single commit
+> git cherry-pick 'commit name'
+# select multiple commit, repaet
+> git cherry-pick -n 'commit name'
+# select multiple commit
+> git cherry-pick 'commit name' 'commit name' ...
+
+> git commit -m 'message'
