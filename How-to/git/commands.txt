@@ -68,36 +68,4 @@ How to link local directory and github repository
    # enforcing push command
    git push origin 'branch name' -f
    git push origin +'branch name'
-   
 
-
-Commands related to branch/merge
-
-1. Branch
-   # create branch
-   git branch 'branch name'
-   # check active branches
-   git branch
-   # checkout branch
-   git checkout 'branch name'
-   # remove remote branch
-   git push origin :'branch name'
-
-2. Merge
-   # merge branch with current branch
-   git merge 'branch name'
-   
-   Rebase
-   # merge branch with master
-   git rebase master
-
-# git clone part of repository
-#. git init
-   git config core.sparseCheckout true
-   git remote add -f origin 'repository'
-   echo 'part of repository/*'>.git/info/sparse-checkout
-   # echo 'git commands.txt'>.git/info/sparse-checkout
-   git pull origin master
-
-# git clone specific branch
-   git clone -b 'branch_name' 'address'

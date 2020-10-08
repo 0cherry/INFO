@@ -1,0 +1,18 @@
+Method to start git.
+
+1. Method to clone remote repository
+# git clone specific branch
+> git clone -b 'branch name' 'url'
+
+2. Method to link with remote repository after init local repository
+# git clone part of repository
+> git init
+> git remote add 'alias' 'repository'
+
+### If you want to pull part of repository
+> git config core.sparseCheckout true
+> echo 'file included in repository'>.git/info/sparse-checkout
+###
+
+# If using windows command line, occur error
+> git pull 'alias' 'branch name to pull'
