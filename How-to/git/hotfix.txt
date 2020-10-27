@@ -17,10 +17,13 @@ create local branch - create remote branch - branch link - work in new branch - 
 After working at a new branch, If pull request is required, create pull request from the repository
 
 # delete new branch after completing the merge of changes
-> git checkout 'merged branch'
-> git branch --delete 'new branch'
-# force to delete branch
-> git branch -D 'new branch'
-> git push origin :'new branch'
+> git checkout 'branch not to be deleted'
+> git branch --delete 'local branch to be deleted'
+> git push origin --delete 'remote branch to be deleted'
+or
+> git push origin :'remote branch to be deleted'
+
+# force to delete local branch
+> git branch -D 'local branch to be deleted'
 
 https://trustyoo86.github.io/git/2017/11/28/git-remote-branch-create.html
