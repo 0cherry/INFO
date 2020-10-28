@@ -1,0 +1,11 @@
+If reflect remote repository after reset local repository
+reset local repository - push remote repository
+
+# reset local repository
+# git reset [--soft|--mixed|--hard] [HEAD]
+> git reset --mixed HEAD^
+
+# push remote repository
+> git push origin 'remote branch'
+if conflicted
+> git push -f origin 'remote branch'
