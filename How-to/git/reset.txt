@@ -3,6 +3,8 @@ reset local repository - push remote repository
 
 # reset local repository
 # git reset [--soft|--mixed|--hard] [HEAD]
+# git reset HEAD@{number}
+# git reset 'commit id'
 > git reset --mixed HEAD^
 
 # push remote repository
