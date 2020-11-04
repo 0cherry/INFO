@@ -1,0 +1,24 @@
+# save work temporarily
+> git stash
+equals
+> git stash save
+
+# apply and remove most recent saved work
+> git stash pop
+
+# list stash
+> git stash list
+
+# apply most recent saved work, no remove
+> git stash apply
+# additionaly save stage status
+> git stash apply --index
+
+# apply specific work
+> git stash apply 'stash name'
+
+# remove most recent saved work
+> git stash drop
+
+# remove specific work
+> git stash drop 'stash name'
